@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yuan_dialog_looding"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="28dp"
+        >
+
+        <ProgressBar
+            android:id="@android:id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@android:id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Loading......"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"/>
+    </LinearLayout>
+
+</RelativeLayout>

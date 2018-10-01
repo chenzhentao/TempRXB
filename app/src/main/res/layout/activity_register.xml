@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_p"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/register_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            app:srcCompat="@drawable/ic_fanhui_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="38px"/>
+
+    </RelativeLayout>
+
+    <com.czt.temprxb.framework.view.myview.MyStateLayout
+        android:id="@+id/login_staslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyText="@string/meiyourenheshuju"
+        app:errorText="@string/jiazaishibai"
+        app:loadingText="@string/jiazaizhong"
+        app:loginText="@string/chongxindenglu"
+        app:noNetworkText="@string/meiyouwangluo"
+        app:timeOutText="@string/chaoshil"
+        >
+
+        <com.yan.pullrefreshlayout.view.scrollView.ReboundScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="260px"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="450px"
+                    android:orientation="horizontal"
+                    >
+
+                    <EditText
+                        android:id="@+id/register_etphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_zhanghu"
+                        android:hint="@string/qingshurushoujihao"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:text="0"
+                        android:paddingRight="20px"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="30px"
+                        />
+
+                    <com.yan.pullrefreshlayout.view.clickBtn.DelayedClickButton
+                        android:id="@+id/register_sendcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#66ffffff"
+                        android:minHeight="0dp"
+                        android:minWidth="118px"
+                        android:padding="10px"
+                        android:text="@string/huoquyanzhengma"
+                        android:textColor="@color/white"
+                        android:textSize="25px"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10px"
+                    android:background="@color/white"
+                    android:minWidth="450px"
+                    />
+
+                <EditText
+                    android:id="@+id/register_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35px"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_yanzhengma"
+                    android:hint="@string/yanzhengma"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:text="0"
+                    android:minWidth="450px"
+                    android:paddingRight="20px"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="30px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10px"
+                    android:background="@color/white"
+                    android:minWidth="450px"
+                    />
+
+                <EditText
+                    android:id="@+id/register_pas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35px"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_mima"
+                    android:hint="@string/shezhizhanghaomima"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:text="1130"
+                    android:minWidth="450px"
+                    android:paddingRight="20px"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="30px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10px"
+                    android:background="@color/white"
+                    android:minWidth="450px"
+                    />
+
+                <EditText
+                    android:id="@+id/register_pas1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35px"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_mima"
+                    android:hint="@string/querenmima"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:minWidth="450px"
+                    android:text="1"
+                    android:paddingRight="20px"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="30px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10px"
+                    android:background="@color/white"
+                    android:minWidth="450px"
+                    />
+
+                <com.yan.pullrefreshlayout.view.clickBtn.DelayedClickButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:background="@drawable/btn_loginp"
+                    android:minHeight="0dp"
+                    android:minWidth="500px"
+                    android:onClick="register"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px"
+                    android:text="@string/register"
+                    android:textColor="@color/white"
+                    android:textSize="30px"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12px"
+                    android:gravity="center_vertical"
+                    android:minWidth="500px"
+                    android:orientation="horizontal"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/register_box"
+                        style="@style/AppTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wotongyui"
+                        android:checked="true"
+                        android:textColor="@color/white"
+                        android:textSize="25px"
+                        />
+
+                    <com.yan.pullrefreshlayout.view.clickBtn.DelayedClickTextView
+                        android:id="@+id/register_tvxieyi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xieyi"
+                        android:textColor="@color/app_color"
+                        android:textSize="25px"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.yan.pullrefreshlayout.view.scrollView.ReboundScrollView>
+    </com.czt.temprxb.framework.view.myview.MyStateLayout>
+</LinearLayout>

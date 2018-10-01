@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/pullre_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="8dp"
+        >
+
+        <TextView
+            android:id="@+id/pullre_tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="下拉刷新"
+            android:textColor="#646464"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/pull_re_tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pullre_tv"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="2dp"
+            android:text="上次更新：3分钟前"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pullre_jiantou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/pullre_ll"
+        android:src="@mipmap/default_ptr_flip"
+        />
+    <ImageView
+        android:id="@+id/pullre_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/pullre_ll"
+        android:src="@mipmap/success"
+        android:visibility="invisible"
+        />
+
+    <com.yan.pullrefreshlayout.view.LoadView
+        android:id="@+id/pullre_loadingview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/pullre_ll"
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>

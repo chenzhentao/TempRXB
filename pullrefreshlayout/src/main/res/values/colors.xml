@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E13120</color>
+    <color name="colorPrimaryDark">#E13120</color>
+    <color name="colorAccent">#E13120</color>
+
+    <color name="app_color">#E13120</color>
+    <color name="alple">#55000000</color>
+    <color name="home_bottom_checked_false">#575757</color>
+    <color name="background">#f4f1f1</color>
+
+
+
+    <color name="white">#ffffff</color>
+    <color name="text_color">#3c3b3b</color>
+    <color name="text_color_alp">#707070</color>
+    <color name="blue">#4BCEAE</color>
+    <color name="blue_p">#05a880</color>
+    <color name="red">#ca1f1f</color>
+    <color name="red_p">#880303</color>
+    <color name="gre">#05a841</color>
+    <color name="zi">#7205cc</color>
+    <color name="yellow">#f2c039</color>
+    <color name="yellow_p">#e1a604</color>
+    <color name="food_itme">#ece5e5</color>
+    <color name="qrcode">#ece5e5</color>
+    <color name="msg_text_top">#000000</color>
+</resources>

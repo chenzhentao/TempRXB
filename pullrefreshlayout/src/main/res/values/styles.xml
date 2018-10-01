@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:windowBackground">@color/background</item>-->
+        <!--<item name="android:textColorPrimary">@color/text_color</item>-->
+        <!--<item name="android:listDivider">@drawable/list_divder</item>-->
+        <!--<item name="colorControlActivated">@color/yellow_p</item>-->
+    </style>
+
+    <style name="login" parent="AppTheme">
+        <!--AppCompatEditText未选中的底线颜色   ratingbar checkedbox radiobutton 未选中-->
+        <!--<item name="colorControlNormal">@color/white</item>-->
+        <!-- AppCompatEditText选中的底线颜色 -->
+        <!--控制 ratingbar checkedbox radiobutton 选中时的颜色-->
+        <!--<item name="colorControlActivated">@color/white</item>-->
+        <!--<item name="android:windowBackground">@drawable/login_backbitmap</item>-->
+        <!--<item name="android:windowSoftInputMode">stateHidden</item>-->
+    </style>
+    <!--地图显示列表 loading 颜色-->
+
+    <style name="maplist" parent="AppTheme">
+        <!--<item name="colorControlActivated">@color/app_color</item>-->
+    </style>
+
+
+    <style name="ratingbar" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <!--<item name="colorAccent">@color/yellow_p</item>-->
+        <!--<item name="colorPrimary">@color/yellow_p</item>-->
+    </style>
+
+    <style name="notAnimation" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+
+    <style name="text_tablayout_style" parent="AppTheme">
+        <item name="android:textSize">28px</item>
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <!--<item name="android:progressDrawable">@drawable/ratingbar</item>-->
+        <!--<item name="android:numColumns">5</item>-->
+    </style>
+
+
+    <style name="dialogWindowAnim" mce_bogus="1" parent="@android:style/Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_top_in</item>
+        <item name="android:windowExitAnimation">@anim/top_bottom_out</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <!--<item name="android:windowSoftInputMode">stateAlwaysVisible|adjustPan</item>-->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="dialogWindowAnimPhoto" mce_bogus="1" parent="AppTheme">
+        <item name="android:windowEnterAnimation">@anim/bottom_top_in</item>
+        <item name="android:windowExitAnimation">@anim/top_bottom_out</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="WinDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!--背景不变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="CityDialog" parent="AppTheme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!--背景不变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>
